@@ -117,6 +117,13 @@ double jValue::as_double() {
   ss >> k;
   return k;
 }
+float jValue::as_float() {
+  stringstream ss;
+  ss << svalue;
+  float k;
+  ss >> k;
+  return k;
+}
 bool jValue::as_bool() {
   if (svalue == "true") return true;
   return false;

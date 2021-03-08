@@ -31,6 +31,7 @@ namespace jute {
       void set_string(std::string s);
       int as_int();
       double as_double();
+      float as_float();
       bool as_bool();
       void* as_null();
       std::string as_string();
